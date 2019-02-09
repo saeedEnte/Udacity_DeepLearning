@@ -34,10 +34,10 @@ def test_create_lookup_tables(create_lookup_tables):
         Bart_Simpson Eh yeah hello is Mike there Last name Rotch
         Moe_Szyslak Hold on I'll check Mike Rotch Mike Rotch Hey has anybody seen Mike Rotch lately
         Moe_Szyslak Listen you little puke One of these days I'm gonna catch you and I'm gonna carve my name on your back with an ice pick
-        Moe_Szyslak Whats the matter Homer You're not your normal effervescent self
+        Moe_Szyslak Whats the matter Homer You're not your normal effervescent self this
         Homer_Simpson I got my problems Moe Give me another one
         Moe_Szyslak Homer hey you should not drink to forget your problems
-        Barney_Gumble Yeah you should only drink to enhance your social skills'''
+        Barney_Gumble Yeah you should only drink to enhance your social skills this'''
     
     test_text = test_text.lower()
     test_text = test_text.split()

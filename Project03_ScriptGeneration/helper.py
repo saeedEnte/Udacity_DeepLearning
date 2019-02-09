@@ -32,10 +32,14 @@ def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
 
     text = text.lower()
     text = text.split()
-    print(text)
+#     print(text)
+
+    print(SPECIAL_WORDS.values())
+    
     vocab_to_int, int_to_vocab = create_lookup_tables(text + list(SPECIAL_WORDS.values()))
     
-    
+#     print(vocab_to_int)
+    print(vocab_to_int[25])
     int_text = [vocab_to_int[word] for word in text]
     pickle.dump((int_text, vocab_to_int, int_to_vocab, token_dict), open('preprocess.p', 'wb'))
 
