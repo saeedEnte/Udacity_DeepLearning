@@ -79,9 +79,10 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
             
             # TODO: Complete this train method to train the model provided.
             model.zero_grad()
-            output = model(batch_X)
+            output = model.forward(batch_X)
             
-            loss = loss_fn(output.squeeze(), batch_y.float())
+            #             loss = loss_fn(output.squeeze(), batch_y.float())
+            loss = loss_fn(output, batch_y)
             loss.backward()
             
             optimizer.step()
